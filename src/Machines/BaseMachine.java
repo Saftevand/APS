@@ -7,22 +7,13 @@ import java.util.List;
 
 public abstract class BaseMachine
 {
-    private int _coinPerDay;
-    private int _maxEmployees;
-    private List<BaseEmployee> _assignedEmployees = new ArrayList<>();
+    private int _costPerDay;
 
-    public BaseMachine(int coinPerDay, int maxEmployees)
+    public BaseMachine(int costPerDay, int maxEmployees)
     {
-        _coinPerDay = coinPerDay;
-        _maxEmployees = maxEmployees;
+        _costPerDay = costPerDay;
 
     }
-    
-
-    public void set_assignedEmployees(List<BaseEmployee> _assignedEmployees) {this._assignedEmployees = _assignedEmployees;}
-
-    public List<BaseEmployee> get_assignedEmployees() {return _assignedEmployees;}
-    public int get_maxEmployees() {return _maxEmployees;}
-    public int get_coinPerDay() {return _coinPerDay;}
+    public int get_costPerDay() {return _costPerDay;}
 
 }
