@@ -8,4 +8,6 @@ public class Player extends BaseEmployee
     {
         super(wage, skillLevel);
     }
+
+
 }
